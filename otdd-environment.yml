@@ -1,0 +1,68 @@
+name: otdd-env
+channels:
+  - rdkit
+  - defaults
+  - plotly
+  - pytorch
+dependencies:
+  - pip<20.3
+  - python==3.7.7
+  - matplotlib
+  - numpy==1.19.2
+  - rdkit==2020.03.2.0
+  - scikit-learn
+  - seaborn
+  - tqdm
+  # For AML Hyperdrive
+  - plotly
+  - plotly-orca
+  - psutil
+  - openssl
+  - tensorflow-gpu==2.1.0
+  - typing-extensions
+  - pytorch
+  - cpuonly
+  # extra otdd
+  - torchvision
+  - torchtext
+  - cmake
+  - h5py
+  - opentsne
+  - pip:
+    - docopt
+    - dpu-utils>=0.2.13
+    - zmq
+    - networkx
+    - pytest
+    - azureml-core
+    - azureml-dataprep
+    - azureml-sdk
+    # For AML hyperdrive
+    - azureml-widgets
+    - ipywidgets
+    - pandas
+    - sklearn
+    - cairosvg
+    - tf2-gnn~=2.12.0
+    - more-itertools
+    - fcd_torch
+    - pyyaml
+    - wrapt
+    - dirhash
+    - scandir
+    - semver
+    - py-repo-root>=1.1.1
+    - json2html
+    - mysql-connector-python==8.0.17
+    # extra for otdd
+    - pykeops
+    - celluloid
+    - attrdict
+    - git+https://github.com/microsoft/otdd.git
+    - git+https://github.com/rossant/ipycache
+    - git+https://github.com/jeanfeydy/geomloss
+    - sentence-transformers
+    - skorch
+    - pot
+    - adjustText
+    - watermark
